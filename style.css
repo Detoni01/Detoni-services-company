@@ -1,4 +1,156 @@
-html {
-  height: 100%;
-  width: 100%;
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fonte Principal */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Cabeçalho */
+header {
+    background: linear-gradient(90deg, rgba(255,0,150,1) 0%, rgba(0,204,255,1) 50%, rgba(0,102,255,1) 100%);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Logo */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 80px; /* Ajuste conforme necessário */
+    width: auto;
+    margin-right: 20px;
+}
+
+/* Título e Subtítulo */
+header h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+header p {
+    font-size: 18px;
+    margin: 5px 0 0;
+}
+
+/* Animação de Texto do Subtítulo */
+header p {
+    background: linear-gradient(90deg, rgba(255,255,0,1) 0%, rgba(255,0,0,1) 50%, rgba(0,0,255,1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: text-gradient 10s ease infinite;
+}
+
+@keyframes text-gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Main Content */
+main {
+    padding-top: 120px; /* Para compensar a altura do cabeçalho fixo */
+    background-color: #f7f7f7; /* Cor de fundo alterada */
+}
+
+/* Seções */
+section {
+    padding: 20px;
+    margin: 20px auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Títulos e Textos */
+h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* Lista de Itens */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background: #e7e7e7;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Botão de Compra */
+.botao-venda {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.botao-venda:hover {
+    background-color: #45a049;
+}
+
+/* Seção de FAQ */
+.faq-section {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Títulos de FAQ */
+.faq-section h2 {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+/* Perguntas e Respostas de FAQ */
+.faq-item {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.faq-item h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    color: #4CAF50;
+}
+
+.faq-item p {
+    font-size: 16px;
+    color: #666;
+    display: none;
 }
