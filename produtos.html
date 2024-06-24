@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nossos Produtos - Detoni Marketing Services</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(90deg, rgba(255,0,150,1) 0%, rgba(0,204,255,1) 50%, rgba(0,102,255,1) 100%);
+            background-size: 600% 100%;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: gradient 15s ease infinite;
+        }
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        header .logo-container {
+            display: flex;
+            align-items: center;
+        }
+        header .logo {
+            height: 100px;
+            width: auto;
+            margin-right: 20px;
+        }
+        header h1 {
+            font-size: 24px;
+            margin: 0;
+        }
+        main {
+            padding: 20px;
+            margin-top: 120px;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .produto {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: #e7e7e7;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .produto:hover {
+            transform: scale(1.05);
+        }
+        .produto img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .produto h3 {
+            margin: 0;
+            color: #4CAF50;
+        }
+        .produto p {
+            color: #666;
+        }
+        .botao-venda {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background-color 0.3s ease;
+        }
+        .botao-venda:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="logo.png" alt="Logo da Empresa" class="logo">
+            <h1>Nossos Produtos</h1>
+        </div>
+    </header>
+
+    <main>
+        <h2>Conheça nossos infoprodutos</h2>
+
+        <div class="produto">
+            <img src="curso1.jpg" alt="Curso 1">
+            <h3>Curso de Marketing Digital</h3>
+            <p>Aprenda as estratégias mais eficazes de marketing digital para impulsionar seu negócio online.</p>
+            <a class="botao-venda" href="https://wa.me/5541987434946?text=Estou%20interessado%20no%20Curso%20de%20Marketing%20Digital" target="_blank">Comprar Agora</a>
+        </div>
+
+        <div class="produto">
+            <img src="ebook1.jpg" alt="E-book 1">
+            <h3>E-book de Empreendedorismo</h3>
+            <p>Descubra como iniciar e gerenciar seu próprio negócio com nosso guia completo de empreendedorismo.</p>
+            <a class="botao-venda" href="https://wa.me/5541987434946?text=Estou%20interessado%20no%20E-book%20de%20Empreendedorismo" target="_blank">Comprar Agora</a>
+        </div>
+
+        <div class="produto">
+            <img src="webinar1.jpg" alt="Webinar 1">
+            <h3>Webinar de Vendas Online</h3>
+            <p>Participe do nosso webinar e aprenda técnicas avançadas de vendas online com especialistas.</p>
+            <a class="botao-venda" href="https://wa.me/5541987434946?text=Estou%20interessado%20no%20Webinar%20de%20Vendas%20Online" target="_blank">Comprar Agora</a>
+        </div>
+    </main>
+
+</body>
+</html>
